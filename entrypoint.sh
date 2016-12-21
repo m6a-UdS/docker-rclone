@@ -6,4 +6,4 @@ rm /rclone/rclone-current-linux-amd64.zip
 cd /rclone
 RCLONE_FOLDER=(*)
 echo "/rclone/$RCLONE_FOLDER"
-/rclone/$RCLONE_FOLDER/rclone --config=/config/rclone.conf copy $SOURCE:/ $DESTINATION:/ --dry-run
+/rclone/$RCLONE_FOLDER/rclone --config=/config/rclone.conf copy $SOURCE:/ $DESTINATION:$BUCKET/ --dry-run
