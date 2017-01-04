@@ -9,4 +9,4 @@ RUN apt-get install -y python-pip python-dev build-essential unzip curl
 
 RUN mkdir /rclone
 COPY main.sh /main.sh
-RUN chmod +x entrypoint.sh
+RUN chmod +x main.sh
