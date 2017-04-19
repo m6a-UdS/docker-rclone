@@ -1,6 +1,7 @@
 #!/bin/bash
 
-curl http://downloads.rclone.org/rclone-current-linux-amd64.zip -o /rclone/rclone-current-linux-amd64.zip
+# curl http://downloads.rclone.org/rclone-current-linux-amd64.zip -o /rclone/rclone-current-linux-amd64.zip
+wget http://downloads.rclone.org/rclone-current-linux-amd64.zip -O /rclone/rclone-current-linux-amd64.zip
 unzip /rclone/rclone-current-linux-amd64.zip -d /rclone
 rm /rclone/rclone-current-linux-amd64.zip
 cd /rclone

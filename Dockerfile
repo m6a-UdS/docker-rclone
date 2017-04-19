@@ -5,7 +5,7 @@ VOLUME ["/config"]
 VOLUME ["/log"]
 
 RUN apt-get update && apt-get -y upgrade
-RUN apt-get install -y python-pip python-dev build-essential unzip curl
+RUN apt-get install -y python-pip python-dev build-essential unzip curl wget
 
 RUN mkdir /rclone
 COPY main.sh /main.sh
